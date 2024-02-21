@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vicons/antd": "^0.12.0",
+    "less": "^4.2.0",
     "naive-ui": "^2.37.3",
     "pinia": "^2.1.7",
     "vfonts": "^0.0.3",
