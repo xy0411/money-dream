@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import path from 'path'
 
 // https://vitejs.dev/config/
@@ -9,16 +10,26 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: ['vue'],
+      imports: [
+        'vue',
+        {
+          'naive-ui': [
+            'useDialog',
+            'useMessage',
+            'useNotification',
+            'useLoadingBar'
+          ]
+        }
+      ],
       resolvers: [
         
       ]
     }),
     Components({
       resolvers: [
-        
-      ],
-    }),
+        NaiveUiResolver()
+      ]
+    })
   ],
   resolve: {
     alias: {
@@ -31,7 +42,7 @@ export default defineConfig({
       '@store': path.resolve(__dirname, './src/store'),
       '@utils': path.resolve(__dirname, './src/utils')
     },
-    extensions: ['.js', '.vue', '.json', '.less', '*']
+    extensions: ['.js', '.ts', '.vue', '.json', '.less', '*']
   },
   server: {
     host: '0.0.0.0',

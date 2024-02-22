@@ -2,20 +2,20 @@
 import HelloWorld from './components/HelloWorld.vue'
 import router from "@router/router";
 
-let a = ref(0)
+const darkTheme = ref('dark')
 
-console.log(a, router);
+console.log(router);
 </script>
 
 <template>
-  <div>
+  <n-config-provider :theme="darkTheme">
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
+  </n-config-provider>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
