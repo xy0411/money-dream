@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import router from "@router/router";
+
+let a = ref(0)
+
+console.log(a, router);
 </script>
 
 <template>
