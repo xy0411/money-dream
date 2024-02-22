@@ -42,7 +42,7 @@ export default defineConfig({
       '@store': path.resolve(__dirname, './src/store'),
       '@utils': path.resolve(__dirname, './src/utils')
     },
-    extensions: ['.js', '.ts', '.vue', '.json', '.less', '*']
+    extensions: ['.js', '.ts', '.vue', '.json', '.less', '*'] // 导入时想要省略的扩展名列表,解决不允许引入.ts文件问题
   },
   server: {
     host: '0.0.0.0',
