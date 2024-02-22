@@ -5,6 +5,8 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "esModuleInterop": true, // 允许export导出，import from导入
+    "declaration": true, // 自动生成声明文件
 
     /* Bundler mode */
     "moduleResolution": "Node",
@@ -18,6 +20,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
+  },
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
