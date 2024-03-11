@@ -1,23 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+// import { ref } from 'vue'
 import router from "@router/router";
+import Layout from '@/layout/index.vue';
 
-const darkTheme = ref('dark')
+
 
 console.log(router);
 </script>
 
 <template>
-  <n-config-provider :theme="darkTheme">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </n-config-provider>
-  <HelloWorld msg="Vite + Vue" />
+  <Layout />
 </template>
 
 <style scoped>
