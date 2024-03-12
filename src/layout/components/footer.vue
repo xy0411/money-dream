@@ -3,7 +3,11 @@
 </script>
 
 <template>
-    <n-layout-footer>成府路</n-layout-footer>
+    <n-layout-footer content-style="text-align: center;"> 一切说明@xy and lql </n-layout-footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+    text-align: center;
+}
+</style>

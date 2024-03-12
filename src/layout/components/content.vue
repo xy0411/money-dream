@@ -3,7 +3,9 @@
 </script>
 
 <template>
-    <n-layout-content content-style="padding: 24px;"> 平山道 </n-layout-content>
+    <n-layout-content content-style="min-height: 880px ; margin: 10px;"> 
+        <RourterView />
+    </n-layout-content>
 </template>
 
 <style scoped></style>
