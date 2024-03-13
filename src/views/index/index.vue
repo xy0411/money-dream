@@ -1,5 +1,4 @@
 <template>
-    <LayoutView />
     123
 </template>
 

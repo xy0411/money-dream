@@ -2,12 +2,15 @@ import { createRouter, createWebHashHistory, createWebHistory } from "vue-router
 
 // import login from './modules/login/routes'
 import index from "./modules/index/routes";
-
+import error from "./modules/error/routes";
+import utilityTool from "./modules/utilityTool/routes";
 
 // 未作路由优先级排序，可暂时通过routes顺序设置
 const routes = [
-	index
+	index,
 	// login,
+	utilityTool,
+	error
 ];
 
 const router = createRouter({
