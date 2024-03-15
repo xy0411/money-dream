@@ -22,7 +22,7 @@ const handXY = () => {
 </script>
 
 <template>
-    <n-result status="404" title="404 资源不存在" description="失败总是贯穿人生始终">
+    <n-result status="404" title="小伙子，找不到东西了吧" description="失败总是贯穿人生始终">
         <template #footer>
             <n-button @click="handXY">去找肖老板吧！</n-button>
         </template>
