@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <n-layout-header>颐和园路</n-layout-header>
+    <n-layout-header content-style="height: 40px;">颐和园路</n-layout-header>
 </template>
 
 <style scoped></style>
