@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <n-layout-footer content-style="text-align: center;"> 一切说明@xy and lql </n-layout-footer>
+    <n-layout-footer position="absolute" content-style="text-align: center;"> 一切说明@xy and lql </n-layout-footer>
 </template>
 
 <style scoped>

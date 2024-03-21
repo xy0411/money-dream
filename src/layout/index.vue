@@ -22,7 +22,6 @@ import CommonFooter from './components/footer.vue'
     .n-layout-scroll-container {
         // display: flex;
         flex-direction: column;
-        .header,
         .footer {
             height: 40px;
             background-color: blue;
