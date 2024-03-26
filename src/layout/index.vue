@@ -25,7 +25,7 @@ import CommonFooter from './components/footer.vue'
         .header,
         .footer {
             height: 40px;
-            background-color: blue;
+            // background-color: blue;
         }
         .content {
             // flex-grow: 1;
