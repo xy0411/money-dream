@@ -2,7 +2,7 @@
 import { h, ref, Component, reactive, onMounted } from 'vue'
 import { NIcon } from 'naive-ui'
 import type { MenuOption } from 'naive-ui'
-import { AimOutlined } from '@vicons/antd'
+// import { AimOutlined } from '@vicons/antd'
 import router from '@router/router'
 
 function renderIcon(icon: Component) {
@@ -11,14 +11,14 @@ function renderIcon(icon: Component) {
 
 const routes = reactive(router)
 
-onMounted(()=> {
+onMounted(() => {
     // router.push("/error")
-    console.log(123, routes);
+    console.log(123, routes)
     menuOptions = routes.options.routes
 })
 
 function logAddr(e) {
-    console.log(123, value);
+    console.log(123, value)
     router.push(value)
 }
 
@@ -26,7 +26,7 @@ let value = reactive(null)
 
 let collapsed = ref(false)
 
-let menuOptions: MenuOption[] = routes.options.routes;
+let menuOptions: MenuOption[] = routes.options.routes
 </script>
 
 <template>

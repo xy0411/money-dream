@@ -4,19 +4,34 @@ import { UnorderedListOutlined, SearchOutlined } from '@vicons/antd'
 </script>
 
 <template>
-    <n-layout-header class="n-header">
-        <div></div>
-        <div>管理员</div>
-        <n-icon size="40">
-            <UnorderedListOutlined />
-        </n-icon>
+    <n-layout-header content-style="height: 60px;">
+        <div class="header">
+            <div class="header_left"></div>
+            <div class="header_right">
+                <n-avatar round :size="38" src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg" />
+                <n-avatar round :size="38" src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg" />
+                <n-avatar round :size="38" src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg" />
+            </div>
+        </div>
     </n-layout-header>
 </template>
 
-<style scoped lang='less'>
-.n-header {
+<style scoped lang="less">
+.header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 10px 10px;
+    .header_left {
+        width: 50%;
+    }
+    .header_right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        .n-avatar {
+            margin-right: 15px;
+        }
+    }
 }
 </style>

@@ -11,10 +11,13 @@
             <div class="content">Notice the gap between the content and tab after applying a background color</div>
         </div>
     </div>
+    <CardCircle :number="80" msg="html" />
 </template>
 
 <script setup lang="ts">
-import LayoutView from '@/layout/index.vue'
+// import LayoutView from '@/layout/index.vue'
+
+import CardCircle from '@/components/CardCircle/index.vue'
 </script>
 
 <style lang="less" scoped>
@@ -27,7 +30,7 @@ import LayoutView from '@/layout/index.vue'
         .one,
         .two,
         .three {
-            color: rgb(75,141,199);
+            color: rgb(75, 141, 199);
             // border: 1px solid;
             padding: 10px 20px;
             // width: ;
@@ -55,7 +58,7 @@ import LayoutView from '@/layout/index.vue'
         margin-left: 10px;
         font-size: 24px;
         font-weight: bold;
-        color: rgb(75,141,199);
+        color: rgb(75, 141, 199);
         .title {
             margin-bottom: 10px;
         }

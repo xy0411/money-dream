@@ -7,10 +7,18 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BannerPic: typeof import('./src/components/bannerPic/index.vue')['default']
+    CardCircle: typeof import('./src/components/CardCircle/index.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+<<<<<<< HEAD
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']
     NIcon: typeof import('naive-ui')['NIcon']
+=======
+    NAvatar: typeof import('naive-ui')['NAvatar']
+    NButton: typeof import('naive-ui')['NButton']
+    NCard: typeof import('naive-ui')['NCard']
+>>>>>>> cf400c49855d3ca3edc7222533331ab640121e51
     NLayout: typeof import('naive-ui')['NLayout']
     NLayoutContent: typeof import('naive-ui')['NLayoutContent']
     NLayoutFooter: typeof import('naive-ui')['NLayoutFooter']
