@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BannerPic: typeof import('./src/components/bannerPic/index.vue')['default']
     CardCircle: typeof import('./src/components/CardCircle/index.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     NAvatar: typeof import('naive-ui')['NAvatar']
